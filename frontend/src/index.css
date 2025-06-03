@@ -1,0 +1,259 @@
+/* These are valid Tailwind CSS directives - IDE may show warnings but they work correctly */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --genesys-orange: #FF451A;
+  --genesys-orange-light: #FF6B47;
+  --genesys-orange-dark: #E53A12;
+  --genesys-gray-dark: #333333;
+  --genesys-gray: #666666;
+  --genesys-gray-light: #EEEEEE;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb;
+  color: var(--genesys-gray-dark);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom styles for IntentGuardians */
+.app-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Tailwind utility classes instead of @apply */
+.card {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.card-header {
+  padding: 1.25rem 1rem;
+}
+
+.card-body {
+  border-top-width: 1px;
+  border-color: #e5e7eb;
+  padding: 1.25rem 1rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-width: 1px;
+  border-color: transparent;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: white;
+  background-color: var(--genesys-orange);
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--genesys-orange-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--genesys-orange);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-width: 1px;
+  border-color: var(--genesys-orange);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: var(--genesys-orange);
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 69, 26, 0.05);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-secondary:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--genesys-orange);
+}
+
+/* Add custom card styles */
+.genesys-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.genesys-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.genesys-card-header {
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--genesys-gray-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.genesys-card-body {
+  padding: 1.25rem;
+}
+
+.genesys-card-footer {
+  padding: 1rem 1.25rem;
+  background-color: #f9fafb;
+  border-top: 1px solid var(--genesys-gray-light);
+}
+
+/* Add animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Form element styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--genesys-orange);
+  box-shadow: 0 0 0 3px rgba(255, 69, 26, 0.2);
+}
+
+/* Badge styles */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.badge-primary {
+  background-color: rgba(255, 69, 26, 0.1);
+  color: var(--genesys-orange-dark);
+}
+
+.badge-success {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: rgb(6, 95, 70);
+}
+
+.badge-warning {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: rgb(146, 64, 14);
+}
+
+.badge-error {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: rgb(153, 27, 27);
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 3px solid var(--genesys-orange);
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

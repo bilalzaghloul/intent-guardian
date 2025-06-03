@@ -1,0 +1,18 @@
+[build]
+  base = "frontend"
+  publish = "build"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "16.14.2"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://intent-guardian-api.herokuapp.com/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
