@@ -70,13 +70,6 @@ A full-stack tool for testing NLU (Natural Language Understanding) models built 
     npm start
     ```
 
-## Usage
-
-1. Open your browser and navigate to `http://localhost:3000`
-2. Select your Genesys Cloud region and enter your OAuth client ID
-3. Log in with your Genesys Cloud credentials
-4. Follow the guided steps to test your NLU models
-
 ## OAuth Client Setup in Genesys Cloud
 
 1. In Genesys Cloud, go to Admin > Integrations > OAuth
@@ -86,7 +79,11 @@ A full-stack tool for testing NLU (Natural Language Understanding) models built 
     - Scopes:
         - `conversation`
         - `architect:readonly`
+        - `TODO: additional ones might be also needed`
 
-## License
+## Usage
 
-This project is licensed under the MIT License.
+1. Open your browser and navigate to `http://localhost:3000`
+2. Select your Genesys Cloud region and enter your OAuth client ID
+3. Log in with your Genesys Cloud credentials
+4. Follow the guided steps to test your NLU models
