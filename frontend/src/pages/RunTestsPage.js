@@ -16,6 +16,7 @@ const RunTestsPage = () => {
         testUtterances,
         setTestResults,
         addTestToHistory,
+        testResults
     } = useApp();
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
@@ -249,6 +250,11 @@ const RunTestsPage = () => {
         navigate('/generate-tests');
     };
 
+    // Add a function to check if results are available
+    const hasResults = () => {
+        return currentLanguage && testResults[currentLanguage]?.results?.length > 0;
+    };
+
     return (
         <Layout>
             <div className="bg-white rounded-lg shadow-sm overflow-hidden">
@@ -267,7 +273,7 @@ const RunTestsPage = () => {
                     )}
 
                     <div className="mb-6">
-                        <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
+                        <div className="flex flex-col md:flex-row md:justify-between md:items-center">
                             <div className="mb-4 md:mb-0 md:w-1/3">
                                 <label htmlFor="language-select" className="block text-sm font-medium text-gray-700">
                                     Test Language:
@@ -276,7 +282,7 @@ const RunTestsPage = () => {
                                     id="language-select"
                                     value={currentLanguage}
                                     onChange={handleLanguageChange}
-                                    className="form-select mt-1 block w-full"
+                                    className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm rounded-md"
                                     disabled={loading}
                                 >
                                     {selectedLanguages.map((lang) => (
@@ -300,24 +306,15 @@ const RunTestsPage = () => {
                                             Testing current language...
                                         </>
                                     ) : (
-                                        'Test Current Language'
+                                        <>
+                                            <svg className="mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                            Test Current Language
+                                        </>
                                     )}
                                 </button>
-                                {/* 
-                <button
-                  type="button"
-                  onClick={runAllTests}
-                  disabled={loading}
-                  className="btn-primary flex items-center"
-                >
-                  {loading ? (
-                    <>
-                      <div className="spinner-sm mr-2"></div>
-                      Testing all languages...
-                    </>
-                  ) : 'Test All Languages'}
-                </button>
-                 */}
                             </div>
                         </div>
                     </div>
@@ -552,7 +549,12 @@ const RunTestsPage = () => {
                             </svg>
                             Back
                         </button>
-                        <button type="button" onClick={handleContinue} className="btn-primary flex items-center">
+                        <button 
+                            type="button" 
+                            onClick={handleContinue} 
+                            disabled={!hasResults()}
+                            className={`btn-primary flex items-center ${!hasResults() ? 'opacity-50 cursor-not-allowed' : ''}`}
+                        >
                             View Results
                             <svg
                                 className="ml-2 h-4 w-4"

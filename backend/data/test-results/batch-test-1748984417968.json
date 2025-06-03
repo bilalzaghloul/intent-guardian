@@ -1,0 +1,2945 @@
+{
+  "id": "batch-test-1748984417968",
+  "test_id": "batch-test-1748984417968",
+  "language": "ar-AE",
+  "results": [
+    {
+      "utterance": "أريد تفعيل بطاقتي الائتمانية",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5846030088612578,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5846030088612578,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.23572235982526127,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.17967463131348083,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أريد تفعيل بطاقتي الائتمانية",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "كيف أفعل بطاقتي",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6014283520882467,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6014283520882467,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.21210351371352215,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.186468134198231,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيف أفعل بطاقتي",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "تفعيل بطاقة الدفع",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.4458447799651518,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.4458447799651518,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.31463200085770293,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.23952321917714534,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقة الدفع",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "أريد تنشيط بطاقتي",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6071723028569027,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6071723028569027,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.20009165736393902,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.19273603977915818,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أريد تنشيط بطاقتي",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "تفعيل بطاقة الدين",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.41584960077331273,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.41584960077331273,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.341991576249778,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.24215882297690922,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقة الدين",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "كيفية تفعيل بطاقتي الائتمانية",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5982047275474878,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5982047275474878,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.24106458654557664,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.16073068590693568,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيفية تفعيل بطاقتي الائتمانية",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "تفعيل بطاقة",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.4308488073959766,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.4308488073959766,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.3351816097318544,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.233969582872169,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقة",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "أريد تفعيل بطاقتي",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5888519824692872,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5888519824692872,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.20720105100774786,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.203946966522965,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أريد تفعيل بطاقتي",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "تفعيل بطاقتي الائتمانية الخاصة",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5736098195303856,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5736098195303856,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.24636692248044606,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.18002325798916832,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقتي الائتمانية الخاصة",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "تفعيل بطاقة الدفع الخاصة بي",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.4261458722225749,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.4261458722225749,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.3387330481539294,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.23512107962349563,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقة الدفع الخاصة بي",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "أريد حجب بطاقتي",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.47398460584902546,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.47398460584902546,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.3913597724205583,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.1346556217304163,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أريد حجب بطاقتي",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "حجب بطاقتي بشكل مؤقت",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5928344021717308,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "مؤقت",
+            "resolved": "temporarily"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5928344021717308,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "مؤقت",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.31500940967331864,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.09215618815495052,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "مؤقت",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حجب بطاقتي بشكل مؤقت",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "كيف أحجب بطاقتي",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5869334689360868,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5869334689360868,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2128698669645371,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.20019666409937611,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيف أحجب بطاقتي",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": false,
+      "slots_match": true,
+      "overall_match": false
+    },
+    {
+      "utterance": "حجب بطاقتي بشكل دائم",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5196774575187522,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "دائم",
+            "resolved": "permanently"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5196774575187522,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "دائم",
+                    "resolved": "permanently"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.3647656137034816,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.11555692877776622,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "دائم",
+                    "resolved": "permanently"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حجب بطاقتي بشكل دائم",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "أريد حجب بطاقتي بشكل مؤقت",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5938626775394532,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "مؤقت",
+            "resolved": "temporarily"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5938626775394532,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "مؤقت",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.3219747108855618,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.08416261157498509,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "مؤقت",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أريد حجب بطاقتي بشكل مؤقت",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "حجب بطاقتي",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.45858891975222316,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.45858891975222316,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.3775232598468307,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.16388782040094602,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حجب بطاقتي",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "كيفية حجب بطاقتي",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.45726680388997265,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.45726680388997265,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.4144371899472639,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.12829600616276338,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيفية حجب بطاقتي",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "حجب بطاقة",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.46828600904014905,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.46828600904014905,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.2789386510283209,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.2527753399315301,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حجب بطاقة",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "أريد حجب بطاقتي بشكل دائم",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5194438346817135,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "دائم",
+            "resolved": "permanently"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5194438346817135,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "دائم",
+                    "resolved": "permanently"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.37627666626235373,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.10427949905593277,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "دائم",
+                    "resolved": "permanently"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أريد حجب بطاقتي بشكل دائم",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "حجب بطاقتي الخاصة",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.44244799926451084,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.44244799926451084,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.39831511563839805,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.1592368850970911,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حجب بطاقتي الخاصة",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "حجب بطاقتي بشكل مؤقت",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5928344021717308,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "مؤقت",
+            "resolved": "temporarily"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5928344021717308,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "مؤقت",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.31500940967331864,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.09215618815495052,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "مؤقت",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حجب بطاقتي بشكل مؤقت",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "تفعيل بطاقتي الائتمانية الخاصة بي الآن",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5771508202591711,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5771508202591711,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.23044491621036767,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.19240426353046108,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقتي الائتمانية الخاصة بي الآن",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "كيف يمكنني تفعيل بطاقتي",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5963692292399891,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5963692292399891,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2411194380740353,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.1625113326859756,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيف يمكنني تفعيل بطاقتي",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "تفعيل بطاقة دفع جديدة",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.4693890179047514,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.4693890179047514,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.28394278543068646,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.24666819666456222,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقة دفع جديدة",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "أحتاج إلى تفعيل بطاقتي الائتمانية سريعا",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.570663248997066,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.570663248997066,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2608699037736567,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.16846684722927738,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أحتاج إلى تفعيل بطاقتي الائتمانية سريعا",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "تفعيل بطاقتي بسرعة",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5662599585003889,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5662599585003889,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.23643943882232624,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.1973006026772848,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقتي بسرعة",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "كيفية تفعيل بطاقتي الائتمانية الخاصة",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5998091442917131,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5998091442917131,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.23606066550292507,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.16413019020536188,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيفية تفعيل بطاقتي الائتمانية الخاصة",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "تفعيل بطاقتي الآن",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5623732397485295,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5623732397485295,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.22553496888419597,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.21209179136727446,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقتي الآن",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "أريد تفعيل بطاقتي الخاصة",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5928438381473601,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5928438381473601,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.20444977443335924,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.20270638741928065,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أريد تفعيل بطاقتي الخاصة",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "تفعيل بطاقتي الائتمانية الخاصة بي فورا",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5516890499861613,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5516890499861613,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2572100531663498,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.19110089684748885,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقتي الائتمانية الخاصة بي فورا",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "كيف أفعل بطاقتي بسرعة",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5765351093354031,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5765351093354031,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2576644883837867,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.16580040228081017,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيف أفعل بطاقتي بسرعة",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "حجب بطاقتي الائتمانية مؤقتا",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5649960272554467,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5649960272554467,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.33857551912709644,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.09642845361745686,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حجب بطاقتي الائتمانية مؤقتا",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "كيف يمكنني حجب بطاقتي",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.49582626247027506,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.49582626247027506,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.3842741826487212,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.1198995548810037,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيف يمكنني حجب بطاقتي",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "حجب بطاقة دفع مؤقتا",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.6024235836683234,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.6024235836683234,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.27287639320068935,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.12470002313098716,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حجب بطاقة دفع مؤقتا",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "أحتاج إلى حجب بطاقتي الائتمانية دائما",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.47650392960201476,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.47650392960201476,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.40410356153409027,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.11939250886389496,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أحتاج إلى حجب بطاقتي الائتمانية دائما",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "حجب بطاقتي بسرعة",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.4727005294432559,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.4727005294432559,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.4018263057463021,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.12547316481044204,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حجب بطاقتي بسرعة",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "كيفية حجب بطاقتي الائتمانية",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.45848199142394963,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.45848199142394963,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.4181732350866999,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.12334477348935038,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيفية حجب بطاقتي الائتمانية",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "حجب بطاقتي الآن",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.45175108542472825,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.45175108542472825,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.39223208314382185,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.15601683143144995,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حجب بطاقتي الآن",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "أريد حجب بطاقتي الخاصة مؤقتا",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5810530944996012,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5810530944996012,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.32965575671189357,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.08929114878850526,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أريد حجب بطاقتي الخاصة مؤقتا",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "حجب بطاقتي الائتمانية الخاصة بي دائما",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.45956526024801236,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.45956526024801236,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.4042814932931046,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.13615324645888288,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حجب بطاقتي الائتمانية الخاصة بي دائما",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "كيف أحجب بطاقتي بسرعة",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5720980877637354,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5720980877637354,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2563978400913812,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.17150407214488325,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيف أحجب بطاقتي بسرعة",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": false,
+      "slots_match": true,
+      "overall_match": false
+    }
+  ],
+  "timestamp": "2025-06-03T21:00:17.969Z",
+  "flowId": "1ffa1992-7e92-489a-9d41-013d865b0c5e",
+  "summary": {
+    "total": 41,
+    "matched": 27,
+    "failed": 14
+  }
+}

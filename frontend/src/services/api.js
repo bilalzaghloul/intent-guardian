@@ -291,6 +291,9 @@ export const llmAPI = {
   
   // Generate more test utterances (includes previous messages for context)
   generateMoreTests: (data) => api.post('/llm/generate-more-tests', data),
+  
+  // Generate bot description
+  generateDescription: (data) => api.post('/llm/generate-description', data),
 };
 
 // Genesys API

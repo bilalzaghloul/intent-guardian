@@ -1,0 +1,3917 @@
+{
+  "id": "batch-test-1748981822369",
+  "test_id": "batch-test-1748981822369",
+  "language": "en-US",
+  "results": [
+    {
+      "utterance": "i need to activate my credit card",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6846695877796999,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6846695877796999,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.20117804025971475,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.1141523719605853,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "i need to activate my credit card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "pls activate my debit card",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6611216763567223,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "debit",
+            "resolved": "debit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6611216763567223,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.19053185533315548,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.14834646831012227,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "pls activate my debit card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "debit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "can ya activate my credit card?",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6880617608380077,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6880617608380077,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.1927147319418176,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.11922350722017472,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 1
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "can ya activate my credit card?",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "activate my debit card pls",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6690027364084435,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "debit",
+            "resolved": "debit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6690027364084435,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.18245266586628456,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.14854459772527195,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "activate my debit card pls",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "debit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "i wanna turn on my credit card",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6195251780181785,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6195251780181785,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.2510725082037324,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.1294023137780891,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "i wanna turn on my credit card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "can you activate my debit card?",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6769142794213271,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "debit",
+            "resolved": "debit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6769142794213271,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.1842111353070178,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.13887458527165517,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "can you activate my debit card?",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "debit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "activate my credit card now",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.7318042325609528,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.7318042325609528,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.14861183246338383,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.11958393497566333,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "activate my credit card now",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "pls actvte my debit card",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6048094818297608,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "debit",
+            "resolved": "debit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6048094818297608,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.21682068254060508,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.17836983562963415,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "pls actvte my debit card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "debit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "i need to activate my card",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6812993309272679,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6812993309272679,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.18826795503533048,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.13043271403740167,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "i need to activate my card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "can you help me activate my card?",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6936596135779592,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6936596135779592,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.1711669161969332,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.13517347022510745,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "can you help me activate my card?",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "i need to block my credit card permanently",
+      "language": "en-US",
+      "recognized_intent": "card_block",
+      "confidence": 0.41543646000338763,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "permanently",
+            "resolved": "permanently"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.41543646000338763,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "permanently",
+                    "resolved": "permanently"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.3835445274445634,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.20101901255204907,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "permanently",
+                    "resolved": "permanently"
+                  }
+                },
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "i need to block my credit card permanently",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "pls block my debit card temporarily",
+      "language": "en-US",
+      "recognized_intent": "card_block",
+      "confidence": 0.45570361871298826,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "temporarily",
+            "resolved": "temporarily"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.45570361871298826,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "temporarily",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.3778650773893986,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.16643130389761307,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "temporarily",
+                    "resolved": "temporarily"
+                  }
+                },
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "pls block my debit card temporarily",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "can ya block my credit card permanently?",
+      "language": "en-US",
+      "recognized_intent": "card_block",
+      "confidence": 0.4329413534037664,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "permanently",
+            "resolved": "permanently"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.4329413534037664,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "permanently",
+                    "resolved": "permanently"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.38406944570383417,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.18298920089239945,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "permanently",
+                    "resolved": "permanently"
+                  }
+                },
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 1
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "can ya block my credit card permanently?",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "block my debit card temporarily pls",
+      "language": "en-US",
+      "recognized_intent": "card_block",
+      "confidence": 0.46563566408533763,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "temporarily",
+            "resolved": "temporarily"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.46563566408533763,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "temporarily",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.3711213903377773,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.1632429455768852,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "temporarily",
+                    "resolved": "temporarily"
+                  }
+                },
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "block my debit card temporarily pls",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "i wanna block my credit card forever",
+      "language": "en-US",
+      "recognized_intent": "card_block",
+      "confidence": 0.44499397488731746,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.44499397488731746,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.35211330372512456,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.20289272138755798,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "i wanna block my credit card forever",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "can you block my debit card for now?",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.43502972969739656,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "debit",
+            "resolved": "debit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.43502972969739656,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.42397839841751583,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.14099187188508758,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "can you block my debit card for now?",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": false,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "block my credit card permanently now",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.4575386102295516,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.4575386102295516,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.4231295249357648,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "permanently",
+                    "resolved": "permanently"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.11933186483468365,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "permanently",
+                    "resolved": "permanently"
+                  }
+                },
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "block my credit card permanently now",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": false,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "pls block my debit card temp",
+      "language": "en-US",
+      "recognized_intent": "card_block",
+      "confidence": 0.4386036447865349,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "temp",
+            "resolved": "temporarily"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.4386036447865349,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "temp",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.3725866629422619,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.18880969227120323,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "temp",
+                    "resolved": "temporarily"
+                  }
+                },
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "pls block my debit card temp",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "i need to block my card",
+      "language": "en-US",
+      "recognized_intent": "card_block",
+      "confidence": 0.41472257153571607,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.41472257153571607,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.37091319410000895,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.21436423436427504,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "i need to block my card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "can you help me block my card?",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.4086541951701146,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.4086541951701146,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.4065549224033571,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.18479088242652822,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "can you help me block my card?",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": false,
+      "slots_match": true,
+      "overall_match": false
+    },
+    {
+      "utterance": "i need to turn on my credit card",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.592316221634254,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.592316221634254,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.2699787248261172,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.13770505353962878,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "i need to turn on my credit card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "pls enable my debit card",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6034448652342806,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "debit",
+            "resolved": "debit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6034448652342806,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.2146633448964435,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.18189178986927584,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "pls enable my debit card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "debit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "can ya switch on my credit card?",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6324430290534316,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6324430290534316,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.22420522244273916,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.1433517485038293,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 1
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "can ya switch on my credit card?",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "enable my debit card now pls",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6655156874127913,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "debit",
+            "resolved": "debit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6655156874127913,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.181851093698354,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.15263321888885467,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "enable my debit card now pls",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "debit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "i wanna enable my credit card",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6237895393647357,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6237895393647357,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.23531768840059794,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.14089277223466629,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "i wanna enable my credit card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "can you enable my debit card?",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6098246986118453,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "debit",
+            "resolved": "debit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6098246986118453,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.2196337361554689,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.17054156523268582,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "can you enable my debit card?",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "debit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "pls enable my credit card",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6107263905869068,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6107263905869068,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.23030635030532776,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.15896725910776546,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "pls enable my credit card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "i need to enable my card",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5980515034779939,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5980515034779939,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.24178829159971887,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.16016020492228727,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "i need to enable my card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "can you help me enable my card?",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6258745817304282,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6258745817304282,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.20998167946135124,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.16414373880822053,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "can you help me enable my card?",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "pls enable my debit card",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6034448652342806,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "debit",
+            "resolved": "debit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6034448652342806,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.2146633448964435,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.18189178986927584,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "pls enable my debit card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "debit"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "i need to disable my credit card permanently",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5784077213656422,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5784077213656422,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.23376409971286494,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "permanently",
+                    "resolved": "permanently"
+                  }
+                },
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.18782817892149278,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "permanently",
+                    "resolved": "permanently"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "i need to disable my credit card permanently",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": false,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "pls block my debit card for now",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.45467629733111836,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "debit",
+            "resolved": "debit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.45467629733111836,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.41622436139159136,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.1290993412772903,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "pls block my debit card for now",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": false,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "can ya freeze my credit card forever?",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5425840130342822,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5425840130342822,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.24199408347463733,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.21542190349108054,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 1
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "can ya freeze my credit card forever?",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": false,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "block my debit card temporarily now",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.4501645321545803,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "debit",
+            "resolved": "debit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.4501645321545803,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.43431311151987745,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "temporarily",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.11552235632554217,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "temporarily",
+                    "resolved": "temporarily"
+                  }
+                },
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "block my debit card temporarily now",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": false,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "i wanna disable my credit card permanently",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6120668365828752,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6120668365828752,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.20725514972620623,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "permanently",
+                    "resolved": "permanently"
+                  }
+                },
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.18067801369091854,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "permanently",
+                    "resolved": "permanently"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "i wanna disable my credit card permanently",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": false,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "can you disable my debit card for now?",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6422588737172411,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "debit",
+            "resolved": "debit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6422588737172411,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.21065693456284434,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.14708419171991446,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "can you disable my debit card for now?",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": false,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "disable my credit card permanently now",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.6631966967178384,
+      "slots": [
+        {
+          "name": "card",
+          "entityType": "card_type",
+          "probability": 1,
+          "value": {
+            "raw": "credit",
+            "resolved": "credit"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.6631966967178384,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_block",
+              "probability": 0.19101954405914068,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "permanently",
+                    "resolved": "permanently"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.1457837592230208,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "permanently",
+                    "resolved": "permanently"
+                  }
+                },
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "credit",
+                    "resolved": "credit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "disable my credit card permanently now",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": false,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "pls block my debit card temp",
+      "language": "en-US",
+      "recognized_intent": "card_block",
+      "confidence": 0.4386036447865349,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "temp",
+            "resolved": "temporarily"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.4386036447865349,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "temp",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.3725866629422619,
+              "entities": [
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "None",
+              "probability": 0.18880969227120323,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "temp",
+                    "resolved": "temporarily"
+                  }
+                },
+                {
+                  "name": "card",
+                  "entityType": "card_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "debit",
+                    "resolved": "debit"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "pls block my debit card temp",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "i need to disable my card",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5688610528241677,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5688610528241677,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.23321883405650157,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.19792011311933083,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "i need to disable my card",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": false,
+      "slots_match": true,
+      "overall_match": false
+    },
+    {
+      "utterance": "can you help me block my card?",
+      "language": "en-US",
+      "recognized_intent": "card_activation",
+      "confidence": 0.4086541951701146,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "3116abcc-1667-4187-ab34-f50087027be9",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/3116abcc-1667-4187-ab34-f50087027be9"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.4086541951701146,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.4065549224033571,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.18479088242652822,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "can you help me block my card?",
+          "language": "en-us"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": false,
+      "slots_match": true,
+      "overall_match": false
+    }
+  ],
+  "timestamp": "2025-06-03T20:17:02.369Z",
+  "flowId": "1ffa1992-7e92-489a-9d41-013d865b0c5e",
+  "summary": {
+    "total": 40,
+    "matched": 27,
+    "failed": 13
+  }
+}

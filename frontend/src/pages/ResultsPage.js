@@ -8,9 +8,15 @@ const ResultsPage = () => {
   const { isAuthenticated } = useAuth();
   const { currentStep, goToStep, testResults, selectedLanguages } = useApp();
   const [language, setLanguage] = useState('');
-  const [exportFormat, setExportFormat] = useState('JSON');
+  const [exportFormat, setExportFormat] = useState('CSV');
   const [showOnlyFailed, setShowOnlyFailed] = useState(false);
   const [filteredResults, setFilteredResults] = useState([]);
+  const [intentFilter, setIntentFilter] = useState('all'); // 'all', 'match', 'mismatch'
+  const [slotFilter, setSlotFilter] = useState('all'); // 'all', 'match', 'mismatch'
+  const [selectedIntentName, setSelectedIntentName] = useState('all');
+  const [selectedSlotName, setSelectedSlotName] = useState('all');
+  const [availableIntents, setAvailableIntents] = useState([]);
+  const [availableSlots, setAvailableSlots] = useState([]);
   const [summary, setSummary] = useState({
     total: 0,
     intentPassed: 0,
@@ -50,6 +56,37 @@ const ResultsPage = () => {
     }
   }, [isAuthenticated, navigate, testResults, selectedLanguages, language, currentStep, goToStep]);
 
+  // Extract available intents and slots when test results change
+  useEffect(() => {
+    if (language && testResults[language]?.results) {
+      // Get unique intent names
+      const intents = new Set();
+      // Get unique slot names
+      const slots = new Set();
+
+      testResults[language].results.forEach(result => {
+        // Add expected and recognized intents
+        if (result.utterance?.expected_intent) {
+          intents.add(result.utterance.expected_intent);
+        }
+        if (result.recognized_intent) {
+          intents.add(result.recognized_intent);
+        }
+
+        // Add slot names from expected and recognized slots
+        if (result.utterance?.expected_slots) {
+          Object.keys(result.utterance.expected_slots).forEach(slot => slots.add(slot));
+        }
+        if (result.slots) {
+          result.slots.forEach(slot => slots.add(slot.name));
+        }
+      });
+
+      setAvailableIntents(Array.from(intents).sort());
+      setAvailableSlots(Array.from(slots).sort());
+    }
+  }, [language, testResults]);
+
   // Filter results when language or showOnlyFailed changes
   useEffect(() => {
     if (language && testResults[language]) {
@@ -66,15 +103,50 @@ const ResultsPage = () => {
         console.error('Could not find results array in test results:', testResults[language]);
       }
 
-      // Filter based on showOnlyFailed
-      const filtered = showOnlyFailed
-        ? resultsArray.filter(result => {
-          // Check if either intent or slots don't match
+      // Apply all filters
+      const filtered = resultsArray.filter(result => {
+        // Skip if showOnlyFailed is true and this result passed
+        if (showOnlyFailed) {
           const expectedIntent = result.utterance?.expected_intent || result.expected_intent;
           const intentMatch = expectedIntent.trim() === result.recognized_intent.trim();
-          return !intentMatch || !result.slots_match;
-        })
-        : resultsArray;
+          if (intentMatch && result.slots_match) return false;
+        }
+
+        // Filter by intent match status
+        if (intentFilter !== 'all') {
+          const expectedIntent = result.utterance?.expected_intent || result.expected_intent;
+          const intentMatch = expectedIntent.trim() === result.recognized_intent.trim();
+          if (intentFilter === 'match' && !intentMatch) return false;
+          if (intentFilter === 'mismatch' && intentMatch) return false;
+        }
+
+        // Filter by slot match status
+        if (slotFilter !== 'all') {
+          if (slotFilter === 'match' && !result.slots_match) return false;
+          if (slotFilter === 'mismatch' && result.slots_match) return false;
+        }
+
+        // Filter by specific intent name
+        if (selectedIntentName !== 'all') {
+          const expectedIntent = result.utterance?.expected_intent || result.expected_intent;
+          if (expectedIntent !== selectedIntentName && result.recognized_intent !== selectedIntentName) {
+            return false;
+          }
+        }
+
+        // Filter by specific slot name
+        if (selectedSlotName !== 'all') {
+          const hasExpectedSlot = result.utterance?.expected_slots && 
+            Object.keys(result.utterance.expected_slots).includes(selectedSlotName);
+          const hasRecognizedSlot = result.slots && 
+            result.slots.some(slot => slot.name === selectedSlotName);
+          if (!hasExpectedSlot && !hasRecognizedSlot) {
+            return false;
+          }
+        }
+
+        return true;
+      });
 
       setFilteredResults(filtered);
 
@@ -115,7 +187,7 @@ const ResultsPage = () => {
         slotSuccessRate: 0
       });
     }
-  }, [language, showOnlyFailed, testResults]);
+  }, [language, showOnlyFailed, intentFilter, slotFilter, selectedIntentName, selectedSlotName, testResults]);
 
   // Handle language change
   const handleLanguageChange = (e) => {
@@ -147,18 +219,45 @@ const ResultsPage = () => {
       data = JSON.stringify(results, null, 2);
     } else if (exportFormat === 'CSV') {
       // Convert to CSV
-      const headers = ['Utterance', 'Expected Intent', 'Recognized Intent', 'Match', 'Confidence', 'Expected Slots', 'Recognized Slots'];
+      const headers = ['Utterance', 'Expected Intent', 'Recognized Intent', 'Intent Match', 'Slot Match', 'Confidence', 'Expected Slots', 'Recognized Slots'];
+      
+      // Helper function to escape CSV fields
+      const escapeCSV = (field) => {
+        if (field === null || field === undefined) return '""';
+        const str = String(field);
+        if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+          return `"${str.replace(/"/g, '""')}"`;
+        }
+        return str;
+      };
+
+      // Helper function to format slots
+      const formatSlots = (slots) => {
+        if (!slots || (Array.isArray(slots) && slots.length === 0) || (typeof slots === 'object' && Object.keys(slots).length === 0)) {
+          return '-';
+        }
+        
+        if (Array.isArray(slots)) {
+          // For recognized slots array
+          return slots.map(slot => `${slot.name}: ${slot.value?.resolved || slot.value?.raw || '-'}`).join('; ');
+        } else {
+          // For expected slots object
+          return Object.entries(slots).map(([name, value]) => `${name}: ${value}`).join('; ');
+        }
+      };
+
       const rows = results.map(result => [
-        result.utterance.text,
-        result.utterance.expected_intent,
-        result.recognized_intent,
-        result.overall_match ? 'Yes' : 'No',
-        result.confidence ? (result.confidence * 100).toFixed(1) + '%' : '',
-        JSON.stringify(result.utterance.expected_slots || {}),
-        JSON.stringify(result.slots || [])
+        escapeCSV(result.utterance?.text || result.text || (typeof result.utterance === 'string' ? result.utterance : '-')),
+        escapeCSV(result.utterance?.expected_intent || result.expected_intent || '-'),
+        escapeCSV(result.recognized_intent || '-'),
+        escapeCSV(intentMatch(result) ? 'Pass' : 'Fail'),
+        escapeCSV(result.slots_match ? 'Pass' : 'Fail'),
+        escapeCSV(result.confidence ? `${(result.confidence * 100).toFixed(1)}%` : '-'),
+        escapeCSV(formatSlots(result.utterance?.expected_slots || result.expected_slots)),
+        escapeCSV(formatSlots(result.slots))
       ]);
 
-      data = [headers, ...rows].map(row => row.join(',')).join('\\n');
+      data = [headers, ...rows].map(row => row.join(',')).join('\n');
     }
 
     // Create download link
@@ -183,6 +282,23 @@ const ResultsPage = () => {
     navigate('/run-tests');
   };
 
+  // New handlers for filters
+  const handleIntentFilterChange = (e) => {
+    setIntentFilter(e.target.value);
+  };
+
+  const handleSlotFilterChange = (e) => {
+    setSlotFilter(e.target.value);
+  };
+
+  const handleIntentNameChange = (e) => {
+    setSelectedIntentName(e.target.value);
+  };
+
+  const handleSlotNameChange = (e) => {
+    setSelectedSlotName(e.target.value);
+  };
+
   // Helper function to check if intent matches
   const intentMatch = (result) => {
     const expectedIntent = result.utterance?.expected_intent || result.expected_intent;
@@ -201,8 +317,9 @@ const ResultsPage = () => {
 
         <div className="px-6 py-5">
           {/* Filter controls */}
-          <div className="flex flex-col md:flex-row md:items-end md:space-x-4 mb-6">
-            <div className="mb-4 md:mb-0 md:w-1/3">
+          <div className="flex flex-wrap gap-4 mb-6">
+            {/* Language selector */}
+            <div className="w-full sm:w-48">
               <label htmlFor="language-select" className="block text-sm font-medium text-gray-700 mb-1">
                 Language:
               </label>
@@ -219,7 +336,78 @@ const ResultsPage = () => {
               </select>
             </div>
 
-            <div className="mb-4 md:mb-0 md:w-1/3">
+            {/* Intent match filter */}
+            <div className="w-full sm:w-48">
+              <label htmlFor="intent-match-filter" className="block text-sm font-medium text-gray-700 mb-1">
+                Intent Match:
+              </label>
+              <select
+                id="intent-match-filter"
+                value={intentFilter}
+                onChange={handleIntentFilterChange}
+                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm rounded-md"
+              >
+                <option value="all">All Results</option>
+                <option value="match">Matched</option>
+                <option value="mismatch">Mismatched</option>
+              </select>
+            </div>
+
+            {/* Slot match filter */}
+            <div className="w-full sm:w-48">
+              <label htmlFor="slot-match-filter" className="block text-sm font-medium text-gray-700 mb-1">
+                Slot Match:
+              </label>
+              <select
+                id="slot-match-filter"
+                value={slotFilter}
+                onChange={handleSlotFilterChange}
+                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm rounded-md"
+              >
+                <option value="all">All Results</option>
+                <option value="match">Matched</option>
+                <option value="mismatch">Mismatched</option>
+              </select>
+            </div>
+
+            {/* Intent name filter */}
+            <div className="w-full sm:w-48">
+              <label htmlFor="intent-name-filter" className="block text-sm font-medium text-gray-700 mb-1">
+                Intent Name:
+              </label>
+              <select
+                id="intent-name-filter"
+                value={selectedIntentName}
+                onChange={handleIntentNameChange}
+                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm rounded-md"
+              >
+                <option value="all">All Intents</option>
+                {availableIntents.map(intent => (
+                  <option key={intent} value={intent}>{intent}</option>
+                ))}
+              </select>
+            </div>
+
+            {/* Slot name filter */}
+            <div className="w-full sm:w-48">
+              <label htmlFor="slot-name-filter" className="block text-sm font-medium text-gray-700 mb-1">
+                Slot Name:
+              </label>
+              <select
+                id="slot-name-filter"
+                value={selectedSlotName}
+                onChange={handleSlotNameChange}
+                className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm rounded-md"
+              >
+                <option value="all">All Slots</option>
+                {availableSlots.map(slot => (
+                  <option key={slot} value={slot}>{slot}</option>
+                ))}
+              </select>
+            </div>
+
+            {/* Export format and show failed toggle */}
+            <div className="w-full sm:w-48">
               <label htmlFor="export-format" className="block text-sm font-medium text-gray-700 mb-1">
                 Export Format:
               </label>

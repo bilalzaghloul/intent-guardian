@@ -1,0 +1,1401 @@
+{
+  "id": "batch-test-1748982912694",
+  "test_id": "batch-test-1748982912694",
+  "language": "ar-AE",
+  "results": [
+    {
+      "utterance": "أريد تفعيل بطاقة الائتمان.",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.45541656801206437,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.45541656801206437,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.3055378649246356,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2390455670633,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أريد تفعيل بطاقة الائتمان.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "كيف يمكنني تفعيل البطاقة؟",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5580507818641879,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5580507818641879,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2835936659790926,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.15835555215671956,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيف يمكنني تفعيل البطاقة؟",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "تفعيل بطاقة الخصم فوري.",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.3988350693093012,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.3988350693093012,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.31876334595589007,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.2824015847348087,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقة الخصم فوري.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "debit"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "بخصوص تفعيل البطاقة، هل يمكنك مساعدتي؟",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.542480365728889,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.542480365728889,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2734652060041508,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.18405442826695997,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "بخصوص تفعيل البطاقة، هل يمكنك مساعدتي؟",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "تفعيل بطاقة الائتمان التي حصلت عليها اليوم.",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.4704269929253722,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.4704269929253722,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.3095543510495909,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.22001865602503695,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقة الائتمان التي حصلت عليها اليوم.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "كيف أفعّل البطاقة الجديدة؟",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5733285327068819,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5733285327068819,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2533694633250188,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.17330200396809936,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيف أفعّل البطاقة الجديدة؟",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "أحتاج إلى تفعيل البطاقة بسرعة.",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5550084196463627,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5550084196463627,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2739186564908969,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.17107292386274042,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أحتاج إلى تفعيل البطاقة بسرعة.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "تفعيل البطاقة الالكترونية التي استلمتها.",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.5558473069294503,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.5558473069294503,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.27317459693888163,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.1709780961316681,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل البطاقة الالكترونية التي استلمتها.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "debit"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "تفعيل بطاقة الائتمان التي لم أستخدمها بعد.",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.4272929551221142,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.4272929551221142,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2898009475757891,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.2829060973020968,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "تفعيل بطاقة الائتمان التي لم أستخدمها بعد.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {
+        "card": "credit"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "كيف يمكنني تفعيل البطاقة عبر الهاتف؟",
+      "language": "ar-AE",
+      "recognized_intent": "card_activation",
+      "confidence": 0.4898464475398122,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_activation",
+              "probability": 0.4898464475398122,
+              "entities": []
+            },
+            {
+              "name": "card_block",
+              "probability": 0.2977483251592204,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.21240522730096742,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيف يمكنني تفعيل البطاقة عبر الهاتف؟",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_activation",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "أرغب في حظر بطاقة الائتمان بشكل دائم.",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5733556510572678,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "دائم",
+            "resolved": "permanently"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5733556510572678,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "دائم",
+                    "resolved": "permanently"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.2191329289844608,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.20751141995827133,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "دائم",
+                    "resolved": "permanently"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "أرغب في حظر بطاقة الائتمان بشكل دائم.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "كيف يمكنني حظر البطاقة؟",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5609394499136015,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5609394499136015,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.30031577522084435,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.13874477486555423,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيف يمكنني حظر البطاقة؟",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "حظر بطاقة الخصم مؤقتًا.",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.7113953548137427,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "مؤقتًا",
+            "resolved": "temporarily"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.7113953548137427,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "مؤقتًا",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.17293313290579407,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.11567151228046324,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "مؤقتًا",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حظر بطاقة الخصم مؤقتًا.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "حظر البطاقة حتى أجد haar.",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5307527447154579,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5307527447154579,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.30690940533383204,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.16233784995071007,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حظر البطاقة حتى أجد haar.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "حظر بطاقة الائتمان التي丢了.",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.502488709391201,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.502488709391201,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.2650056646022437,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.2325056260065553,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حظر بطاقة الائتمان التي丢了.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "كيف يمكنني حظر البطاقة عبر الإنترنت؟",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5516098763753107,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5516098763753107,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.30346323243203727,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.1449268911926521,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "كيف يمكنني حظر البطاقة عبر الإنترنت؟",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {},
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    },
+    {
+      "utterance": "حظر البطاقة بسبب الخسارة.",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5701374174246,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5701374174246,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.27151177472808047,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.15835080784731947,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حظر البطاقة بسبب الخسارة.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "permanently"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "حظر البطاقة حتى أجدها.",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.5980313687402663,
+      "slots": [],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.5980313687402663,
+              "entities": []
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.2646793160481163,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.1372893152116173,
+              "entities": []
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حظر البطاقة حتى أجدها.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": false,
+      "overall_match": false
+    },
+    {
+      "utterance": "حظر البطاقة مؤقتًا بسبب السفر.",
+      "language": "ar-AE",
+      "recognized_intent": "card_block",
+      "confidence": 0.6667459702621246,
+      "slots": [
+        {
+          "name": "block",
+          "entityType": "block_type",
+          "probability": 1,
+          "value": {
+            "raw": "مؤقتًا",
+            "resolved": "temporarily"
+          }
+        }
+      ],
+      "raw_response": {
+        "version": {
+          "id": "17cdcb61-0210-4e33-8c27-f7179932131b",
+          "domain": {
+            "id": "3522700b-7523-42c0-8204-670df5cab6d3",
+            "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3"
+          },
+          "selfUri": "/api/v2/languageunderstanding/domains/3522700b-7523-42c0-8204-670df5cab6d3/versions/17cdcb61-0210-4e33-8c27-f7179932131b"
+        },
+        "output": {
+          "intents": [
+            {
+              "name": "card_block",
+              "probability": 0.6667459702621246,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "مؤقتًا",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "card_activation",
+              "probability": 0.2259866194999879,
+              "entities": []
+            },
+            {
+              "name": "None",
+              "probability": 0.10726741023788752,
+              "entities": [
+                {
+                  "name": "block",
+                  "entityType": "block_type",
+                  "probability": 1,
+                  "value": {
+                    "raw": "مؤقتًا",
+                    "resolved": "temporarily"
+                  }
+                }
+              ]
+            }
+          ],
+          "dialogActs": [
+            {
+              "name": "escalation",
+              "probability": 0
+            },
+            {
+              "name": "affirmation",
+              "probability": 0
+            },
+            {
+              "name": "negation",
+              "probability": 0
+            },
+            {
+              "name": "reset",
+              "probability": 0
+            },
+            {
+              "name": "greeting",
+              "probability": 0
+            }
+          ]
+        },
+        "input": {
+          "text": "حظر البطاقة مؤقتًا بسبب السفر.",
+          "language": "ar-ae"
+        }
+      },
+      "expected_intent": "card_block",
+      "expected_slots": {
+        "block": "temporarily"
+      },
+      "intent_match": true,
+      "slots_match": true,
+      "overall_match": true
+    }
+  ],
+  "timestamp": "2025-06-03T20:35:12.694Z",
+  "flowId": "1ffa1992-7e92-489a-9d41-013d865b0c5e",
+  "summary": {
+    "total": 19,
+    "matched": 10,
+    "failed": 9
+  }
+}

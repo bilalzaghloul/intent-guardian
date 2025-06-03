@@ -63,7 +63,7 @@ router.post('/generate-tests', async (req, res) => {
         const llmResponse = await axios.post(
             'https://api.groq.com/openai/v1/chat/completions',
             {
-                model: 'deepseek-r1-distill-llama-70b', // Use Deepseek model for better quality
+                model: 'llama-3.3-70b-versatile',
                 messages: [
                     {
                         role: 'user',
@@ -217,7 +217,7 @@ router.post('/generate-more-tests', async (req, res) => {
         const llmResponse = await axios.post(
             'https://api.groq.com/openai/v1/chat/completions',
             {
-                model: 'deepseek-r1-distill-llama-70b',
+                model: 'llama-3.3-70b-versatile',
                 messages: [
                     {
                         role: 'user',
@@ -328,18 +328,36 @@ router.post('/generate-description', async (req, res) => {
         }
 
         // Generate a prompt for the bot description
-        const prompt = `You are an expert in conversational AI and chatbot analysis. Based on the following list of intents, generate a concise but informative description of what this bot can do. The description should be around 2-3 sentences and focus on the bot's main capabilities.
+        const { entities } = req.body;
+
+        // Generate a prompt that includes both intents and entities
+        const prompt = `You are an expert in conversational AI and chatbot analysis. Based on the following list of intents and entities, generate a concise but informative description of what this bot can do. The description should be around 2-3 sentences and focus on the bot's main capabilities.
 
 Intents:
-${intents.map((intent) => `- ${intent.name}${intent.description ? `: ${intent.description}` : ''}`).join('\n')}
+${intents
+    .map((intent) => {
+        const entityRefs =
+            intent.entityReferences && intent.entityReferences.length
+                ? ` (Uses entities: ${intent.entityReferences.join(', ')})`
+                : '';
+        return `- ${intent.name}${intent.description ? `: ${intent.description}` : ''}${entityRefs}`;
+    })
+    .join('\n')}
 
-Write a natural description that explains the bot's purpose and main functionalities to a business user.`;
+${
+    entities && entities.length > 0
+        ? `\nEntities:
+${entities.map((entity) => `- ${entity.name} (${entity.type})`).join('\n')}`
+        : ''
+}
+
+Write a natural description that explains the bot's purpose, main functionalities, and data collection capabilities to a business user.`;
 
         // Call Groq API with Deepseek model
         const llmResponse = await axios.post(
             'https://api.groq.com/openai/v1/chat/completions',
             {
-                model: 'deepseek-r1-distill-llama-70b',
+                model: 'llama-3.3-70b-versatile',
                 messages: [
                     {
                         role: 'user',
@@ -402,7 +420,7 @@ function generatePrompt(intents, language) {
     const languageName = languageMap[language] || language;
 
     // Create a detailed prompt for the LLM based on the provided example
-    let prompt = `You are a conversational AI testing assistant. I will provide you with a list of intents, some of which include slots. Your task is to generate 10 realistic user utterances per intent in ${languageName}. The output should be a flat list, where each utterance is labeled with its expected intent and, if applicable, the expected slot(s) and their values.
+    let prompt = `You are a conversational AI testing assistant. I will provide you with a list of intents, some of which include slots. Your task is to generate 10 realistic user utterances per intent in this specific language whose code is ${languageName}. The output should be a flat list, where each utterance is labeled with its expected intent and, if applicable, the expected slot(s) and their values.
 
 Some utterances should include slot values naturally, while others should not. Not every utterance is required to mention a slot, even if one is defined. Slot values should be incorporated in a conversational way, like a real customer would speak.
 

@@ -78,33 +78,42 @@ const SelectBotPage = () => {
         if (selectedFlowId) {
             fetchFlowDetails();
         }
-    }, [selectedFlowId, selectedFlowType]);
-
-    // Function to generate AI description based on intents and entities
+    }, [selectedFlowId, selectedFlowType]); // Function to generate AI description based on intents and entities
     const generateBotDescription = async (intents, entities) => {
         try {
             setIsGeneratingDescription(true);
             setBotDescription(''); // Clear existing description while generating
+            console.log('[SelectBotPage] Generating description for', intents.length, 'intents');
+
             const response = await llmAPI.generateDescription({
                 intents: intents.map((intent) => ({
                     name: intent.name,
                     description: intent.description || '',
+                    entityReferences: intent.entityReferences || [],
+                })),
+                entities: entities.map((entity) => ({
+                    name: entity.name,
+                    type: entity.type || 'unknown',
                 })),
             });
 
+            console.log('[SelectBotPage] Description API response:', response.data);
+
             if (response.data.success) {
                 setBotDescription(response.data.description);
+            } else {
+                console.warn('[SelectBotPage] Description generation failed:', response.data.message);
             }
         } catch (error) {
-            console.error('Error generating bot description:', error);
+            console.error('[SelectBotPage] Error generating bot description:', error.response?.data || error.message);
+            setBotDescription('Failed to generate bot description. Please try again.');
         } finally {
             setIsGeneratingDescription(false);
         }
-    };
-
-    // Effect to generate bot description when flow details change
+    }; // Effect to generate bot description when flow details change
     useEffect(() => {
-        if (flowDetailsData?.intents && flowDetailsData?.entities) {
+        // Only generate description if there are intents
+        if (flowDetailsData?.intents?.length > 0 && flowDetailsData?.entities) {
             generateBotDescription(flowDetailsData.intents, flowDetailsData.entities);
         }
     }, [flowDetailsData]);
@@ -114,12 +123,16 @@ const SelectBotPage = () => {
         const flowId = e.target.value;
         setSelectedFlowId(flowId);
         setFlowDetailsData(null);
-    };
-
-    // Handle continue button click
+        setBotDescription('');
+    }; // Handle continue button click
     const handleContinue = () => {
         if (!selectedFlowId || !flowDetailsData) {
             setError('Please select a bot flow');
+            return;
+        }
+
+        if (!flowDetailsData.intents || flowDetailsData.intents.length === 0) {
+            setError('This bot has no intents configured. Please select a different bot flow that has intents.');
             return;
         }
 
@@ -309,8 +322,11 @@ const SelectBotPage = () => {
                                                         viewBox="0 0 20 20"
                                                         fill="currentColor"
                                                     >
-                                                        <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" />
-                                                        <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" />
+                                                        <path d="M2 5a2 2 0 002-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" />
+                                                        <path
+                                                            d="M15 7v2a4 4 0 01-4 4H9.20l-.31 1.242c-.412 1.65-1.813 2.758-3.487 2.758-1.675 0-3.075-1.108-3.487-2.758L1.8 6H0V5a1 1 0 011-1h3V3a1 1 0 011-1h2zm0 7.5a.5.5 0 100-1 .5.5 0 000 1zm5.5.5a.5.5 0 11-1 0 .5.5 0 011 0zM7 7a1 1 0 100-2 1 1 0 000 2zm5-1a1 1 0 110 2 1 1 0 010-2zM7 9a1 1 0 100-2 1 1 0 000 2zm5-1a1 1 0 110 2 1 1 0 010-2z"
+                                                            clipRule="evenodd"
+                                                        />
                                                     </svg>
                                                     Intents
                                                 </h4>
@@ -327,7 +343,33 @@ const SelectBotPage = () => {
                                                     </div>
 
                                                     <div className="text-sm text-gray-600">
-                                                        {flowDetailsData.intents && (
+                                                        {flowDetailsData.intents?.length === 0 ? (
+                                                            <div className="text-center py-4">
+                                                                <div className="flex items-center justify-center">
+                                                                    <svg
+                                                                        className="h-6 w-6 text-orange-500 mr-2"
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        fill="none"
+                                                                        viewBox="0 0 24 24"
+                                                                        stroke="currentColor"
+                                                                    >
+                                                                        <path
+                                                                            strokeLinecap="round"
+                                                                            strokeLinejoin="round"
+                                                                            strokeWidth={2}
+                                                                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                                                                        />
+                                                                    </svg>
+                                                                    <span className="text-orange-600 font-medium">
+                                                                        No intents found
+                                                                    </span>
+                                                                </div>
+                                                                <p className="mt-2 text-gray-500">
+                                                                    This bot has no intents configured. Please select a
+                                                                    different bot that has intents to test.
+                                                                </p>
+                                                            </div>
+                                                        ) : (
                                                             <div className="space-y-1">
                                                                 <h5 className="font-medium text-gray-700">
                                                                     Bot Intents:
